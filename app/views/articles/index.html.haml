@@ -1,3 +1,4 @@
+/* navbar
 %nav.navbar.navbar-light.navbar-customclass
   .container-fluid
   .bar-search
@@ -9,3 +10,13 @@
   .like-cart
     = icon("fas", "heart", class: "heart-icon")
     = icon("fas", "shopping-cart", class: "shopping-icon")
+/* navtab
+%ul.nav.justify-content-center
+  %li.nav-item
+    %a.nav-link.active{"aria-current" => "page", :href => "#"} Fukusukeとは
+  %li.nav-item
+    %a.nav-link{:href => "#"} 使い方
+  %li.nav-item
+    %a.nav-link{:href => "#"} 読みもの
+  %li.nav-item
+    %a.nav-link.disabled{"aria-disabled" => "true", :href => "#", :tabindex => "-1"} お買い物
