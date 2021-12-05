@@ -1,3 +1,17 @@
+@import "colors";
+
+body{
+  background-color: $white;
+}
+
 .navbar-customclass{
-background-color: #E26126;
+background-color: $yellow;
+};
+
+.navtab-customclass{
+background-color: $gray;
+}
+
+.nav-link{
+  color: $black
 }
