@@ -4,8 +4,10 @@ body{
   background-color: $white;
 }
 
+// navbar
 .navbar-customclass{
 background-color: $yellow;
+padding: 10px;
 };
 
 .navtab-customclass{
@@ -14,4 +16,22 @@ background-color: $gray;
 
 .nav-link{
   color: $black
+}
+
+// header
+.header-customclass{
+height: 100px;
+background-color: $orange;
+margin-top: 20px;
+}
+
+.main-customclass{
+  height: 300px;
+  background-color: $orange;
+  margin-top: 20px;
+  }
+  
+.title-class{
+  margin-top: 10px;
+  text-align:center;
 }
