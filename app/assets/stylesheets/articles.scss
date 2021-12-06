@@ -49,7 +49,15 @@ background-color: $orange;
   
 .title-class{
   margin-top: 10px;
+  margin-bottom: 10px;
   text-align:center;
+  padding: 6px 23px;
+  font-weight: 700;
+  background-color: $yellow;
+  width: 170px;
+  border-radius: 30px;
+  font-size: 1.0rem;
+  color: white
 }
 
 // footer
