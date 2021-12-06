@@ -23,12 +23,16 @@
 /* main
 %body.body-customclass
   .container.main-container-class
-    .container-fluid.header-customclass
-      hello!
-    .container-fluid.main-customclass
-      .row
-        %p texttexttextvtexttexttexttextvvvvvvvtexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext
-        %button.btn.btn-outline-warning.btn-customclass{:type => "button"} 続きを読む
+    .card
+      .card-body
+        This is some text within a card body.
+    .card.main-customclass
+      .card-body
+        %h5.card-title Card title
+        %h6.card-subtitle.mb-2.text-muted Card subtitle
+        %p.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
+        %a.card-link{:href => "#"} Card link
+        %a.card-link{:href => "#"} Another link
     .container.title-class
       今日のメニュー
     .row.row-cols-1.row-cols-md-2.g-4.top-row-class
