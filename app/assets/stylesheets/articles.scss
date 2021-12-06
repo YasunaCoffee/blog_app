@@ -4,6 +4,8 @@ body{
   background-color: $white;
 }
 
+
+
 // navbar
 .navbar-customclass{
 background-color: $yellow;
@@ -18,11 +20,21 @@ background-color: $gray;
   color: $black
 }
 
-// header
+// body
+
+.body-customclass{
+background-color: $blue;
+word-break: break-all;
+}
+
+.main-container-class{
+  padding: 10px;
+}
+
 .header-customclass{
 height: 100px;
 background-color: $orange;
-margin-top: 20px;
+
 }
 
 .main-customclass{

@@ -21,11 +21,42 @@
   %li.nav-item
     %a.nav-link.disabled{"aria-disabled" => "true", :href => "#", :tabindex => "-1"} お買い物
 /* main
-.container-fluid.header-customclass
-  hello!
-.container-fluid.main-customclass
-  .row.justify-content-center
-    %p text
-    %button.btn.btn-outline-warning.btn-customclass{:type => "button"} 続きを読む
-.container.title-class
-  今日のメニュー
+%body.body-customclass
+  .container.main-container-class
+    .container-fluid.header-customclass
+      hello!
+    .container-fluid.main-customclass
+      .row
+        %p texttexttextvtexttexttexttextvvvvvvvtexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext
+        %button.btn.btn-outline-warning.btn-customclass{:type => "button"} 続きを読む
+    .container.title-class
+      今日のメニュー
+    .card.mb-3
+      %img.card-img-top{:alt => "coffee", :src => "https://kutsulogcafe.com/wp-content/uploads/2021/01/ROKUMEI4.jpg"}/
+      .card-body
+        %h5.card-title コーヒーとペアリングしたい！美味しいパンは？
+        %p.card-text This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+        %p.card-text
+          %small.text-muted 2022.12.3 update
+    .card-group
+      .card
+        %img.card-img-top{:alt => "...", :src => "https://www.narakko.jp/wp-content/uploads/2019/12/2001tabicoffee2-768x768.jpg"}/
+        .card-body
+          %h5.card-title Card title
+          %p.card-text This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+        .card-footer
+          %small.text-muted Last updated 3 mins ago
+      .card
+        %img.card-img-top{:alt => "...", :src => "https://www.narakko.jp/wp-content/uploads/2019/12/2001tabicoffee4-768x768.jpg"}/
+        .card-body
+          %h5.card-title Card title
+          %p.card-text This card has supporting text below as a natural lead-in to additional content.
+        .card-footer
+          %small.text-muted Last updated 3 mins ago
+      .card
+        %img.card-img-top{:alt => "...", :src => "https://www.narakko.jp/wp-content/uploads/2019/12/2001tabicoffee-768x768.jpg"}/
+        .card-body
+          %h5.card-title Card title
+          %p.card-text This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.
+        .card-footer
+          %small.text-muted Last updated 3 mins ago
