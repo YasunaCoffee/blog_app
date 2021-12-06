@@ -22,62 +22,62 @@
     %a.nav-link.disabled{"aria-disabled" => "true", :href => "#", :tabindex => "-1"} お買い物
 /* main
 %body.body-customclass
-  .container.main-container-class
+  .container-fluid.main-container-class
     .card
       .card-body
-        This is some text within a card body.
+        = icon("fas", "bullhorn", class: "bullhorn-icon")
+        母の日ギフトあります
     .card.main-customclass
       .card-body
-        %h5.card-title 4月24日(金)
-        = icon("fas", "mug-hot", class: "coffee-icon")
-        %h6.card-subtitle.mb-2.text-muted 営業時間 11:00-18:00
+        %h5.card-title.card-title-customclass 4月24日(金)
+        %h6.card-subtitle.mb-2 営業時間 11:00-18:00
         %p.card-text 本日のおすすめコーヒーはエチオピアナチュラルです！
         %a.card-link{:href => "#"} メニュー
         %a.card-link{:href => "#"} 駐車場
-    .container.title-class
-      特集
-    .row.row-cols-1.row-cols-md-2.g-4.top-row-class
-      .col
-        .card
-          %img.card-img-top{:alt => "coffee", :src => "https://kutsulogcafe.com/wp-content/uploads/2021/01/ROKUMEI4.jpg"}/
-          .card-body
-            %h5.card-title コーヒーとペアリングしたい！美味しいパンは？
-            %p.card-text This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-          .card-footer
-            %small.text-muted Last updated 3 mins ago
-      .col
-        .card
-          %img.card-img-top{:alt => "coffee", :src => "https://kutsulogcafe.com/wp-content/uploads/2021/01/ROKUMEI4.jpg"}/
-          .card-body
-            %h5.card-title コーヒーとペアリングしたい！美味しいパンは？
-            %p.card-text This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-          .card-footer
-            %small.text-muted Last updated 3 mins ago
-    .row.row-cols-2.row-cols-md-3.g-4
-      .col
-        .card
-          %img.card-img-top{:alt => "...", :src => "https://kutsulogcafe.com/wp-content/uploads/2021/01/ROKUMEI4.jpg"}/
-          .card-body
-            %h5.card-title Card title
-            %p.card-text This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-      .col
-        .card
-          %img.card-img-top{:alt => "...", :src => "https://kutsulogcafe.com/wp-content/uploads/2021/01/ROKUMEI4.jpg"}/
-          .card-body
-            %h5.card-title Card title
-            %p.card-text This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-      .col
-        .card
-          %img.card-img-top{:alt => "...", :src => "https://kutsulogcafe.com/wp-content/uploads/2021/01/ROKUMEI4.jpg"}/
-          .card-body
-            %h5.card-title Card title
-            %p.card-text This is a longer card with supporting text below as a natural lead-in to additional content.
-      .col
-        .card
-          %img.card-img-top{:alt => "...", :src => "https://kutsulogcafe.com/wp-content/uploads/2021/01/ROKUMEI4.jpg"}/
-          .card-body
-            %h5.card-title Card title
-            %p.card-text This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+  .container.title-class
+    特集
+  .row.row-cols-1.row-cols-md-2.g-4.top-row-class
+    .col
+      .card
+        %img.card-img-top{:alt => "coffee", :src => "https://kutsulogcafe.com/wp-content/uploads/2021/01/ROKUMEI4.jpg"}/
+        .card-body
+          %h5.card-title コーヒーとペアリングしたい！美味しいパンは？
+          %p.card-text This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+        .card-footer
+          %small.text-muted Last updated 3 mins ago
+    .col
+      .card
+        %img.card-img-top{:alt => "coffee", :src => "https://kutsulogcafe.com/wp-content/uploads/2021/01/ROKUMEI4.jpg"}/
+        .card-body
+          %h5.card-title コーヒーとペアリングしたい！美味しいパンは？
+          %p.card-text This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+        .card-footer
+          %small.text-muted Last updated 3 mins ago
+  .row.row-cols-2.row-cols-md-3.g-4
+    .col
+      .card
+        %img.card-img-top{:alt => "...", :src => "https://kutsulogcafe.com/wp-content/uploads/2021/01/ROKUMEI4.jpg"}/
+        .card-body
+          %h5.card-title Card title
+          %p.card-text This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+    .col
+      .card
+        %img.card-img-top{:alt => "...", :src => "https://kutsulogcafe.com/wp-content/uploads/2021/01/ROKUMEI4.jpg"}/
+        .card-body
+          %h5.card-title Card title
+          %p.card-text This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+    .col
+      .card
+        %img.card-img-top{:alt => "...", :src => "https://kutsulogcafe.com/wp-content/uploads/2021/01/ROKUMEI4.jpg"}/
+        .card-body
+          %h5.card-title Card title
+          %p.card-text This is a longer card with supporting text below as a natural lead-in to additional content.
+    .col
+      .card
+        %img.card-img-top{:alt => "...", :src => "https://kutsulogcafe.com/wp-content/uploads/2021/01/ROKUMEI4.jpg"}/
+        .card-body
+          %h5.card-title Card title
+          %p.card-text This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
 /* footer
 %footer
   %ul.list-group.list-group-flush
@@ -86,3 +86,5 @@
     %li.list-group-item.list-customclass A third item
     %li.list-group-item.list-customclass A fourth item
     %li.list-group-item.list-customclass And a fifth one
+  .container-fluid.credit-customclass
+    %small (c)Fukusuke Coffee 2022

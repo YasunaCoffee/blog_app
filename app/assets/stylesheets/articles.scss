@@ -2,18 +2,20 @@
 
 body{
   background-color: $white;
+  font-family: 'Noto Sans JP', sans-serif;
 }
-
-
 
 // navbar
 .navbar-customclass{
-background-color: $orange;
+background-color: $white;
 padding: 10px;
+font-family: 'Kanit', sans-serif;
+font-weight: bold
 };
 
 .navtab-customclass{
-background-color: $orange;
+  font-family: 'Kanit', sans-serif;
+  background-color: white;
 }
 
 .nav-link{
@@ -29,12 +31,7 @@ word-break: break-all;
 
 .main-container-class{
   padding: 10px;
-}
-
-.header-customclass{
-height: 100px;
-background-color: $yellow;
-
+  background-color: $white;
 }
 
 .top-row-class{
@@ -42,9 +39,14 @@ background-color: $yellow;
 }
 
 .main-customclass{
-  height: 300px;
-  background-color: $yellow;
   margin-top: 20px;
+  background-color: $blue;
+  color: white;
+  font-weight: 500;
+  }
+
+  .card-title-customclass{
+    font-size: 1.5rem;
   }
   
 .title-class{
@@ -62,5 +64,10 @@ background-color: $yellow;
 
 // footer
 .list-customclass {
-background-color: $yellow;
+background-color: $orange;
+}
+
+.credit-customclass{
+  background-color: $orange;
+  text-align: center;
 }
