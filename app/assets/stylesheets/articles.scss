@@ -1,13 +1,13 @@
 @import "colors";
 
 body{
-  background-color: $white;
+  background-color: $rskyblue;
   font-family: 'Noto Sans JP', sans-serif;
 }
 
 // navbar
 .navbar-customclass{
-background-color: $white;
+background-color: $ryellow;
 padding: 10px;
 font-family: 'Kanit', sans-serif;
 font-weight: bold
@@ -19,19 +19,19 @@ font-weight: bold
 }
 
 .nav-link{
-  color: $black
+  color: $cblue
 }
 
 // body
 
 .body-customclass{
-background-color: $white;
+background-color: $rskyblue;
 word-break: break-all;
 }
 
 .main-container-class{
   padding: 10px;
-  background-color: $white;
+  background-color: $rskyblue;
 }
 
 .top-row-class{
@@ -40,8 +40,8 @@ word-break: break-all;
 
 .main-customclass{
   margin-top: 20px;
-  background-color: $blue;
-  color: white;
+  background-color: $rpink;
+  color: black;
   font-weight: 500;
   }
 
@@ -55,7 +55,7 @@ word-break: break-all;
   text-align:center;
   padding: 6px 23px;
   font-weight: 700;
-  background-color: $orange;
+  background-color: $rred;
   width: 170px;
   border-radius: 30px;
   font-size: 1.0rem;
@@ -64,10 +64,10 @@ word-break: break-all;
 
 // footer
 .list-customclass {
-background-color: $orange;
+background-color: $rred;
 }
 
 .credit-customclass{
-  background-color: $orange;
+  background-color: $rred;
   text-align: center;
 }
