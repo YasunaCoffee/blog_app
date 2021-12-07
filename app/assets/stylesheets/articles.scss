@@ -30,7 +30,7 @@ word-break: break-all;
 }
 
 .info-customclass{
-  background-color: $ggrey;
+  border-bottom: solid 5px $gred;
 }
 
 .main-container-class{
@@ -42,11 +42,15 @@ word-break: break-all;
   margin-bottom: 20px;
 }
 
-.main-customclass{
+.today-customclass{
   margin-top: 20px;
-  background-color: $ggrey;
+  background-color: white;
   color: black;
   font-weight: 500;
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  font-weight: bold;
+  border: solid 10px $ggrey;
   }
 
   .card-title-customclass{
