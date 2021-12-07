@@ -7,7 +7,7 @@ body{
 
 // navbar
 .navbar-customclass{
-background-color: $ryellow;
+background-color: $gred;
 padding: 10px;
 font-family: 'Kanit', sans-serif;
 font-weight: bold
@@ -15,7 +15,7 @@ font-weight: bold
 
 .navtab-customclass{
   font-family: 'Kanit', sans-serif;
-  background-color: white;
+  background-color: $ggreen;
 }
 
 .nav-link{
@@ -25,13 +25,17 @@ font-weight: bold
 // body
 
 .body-customclass{
-background-color: $rskyblue;
+background-color: $gblue;
 word-break: break-all;
+}
+
+.info-customclass{
+  background-color: $ggrey;
 }
 
 .main-container-class{
   padding: 10px;
-  background-color: $rskyblue;
+  background-color: $gblue;
 }
 
 .top-row-class{
@@ -40,7 +44,7 @@ word-break: break-all;
 
 .main-customclass{
   margin-top: 20px;
-  background-color: $rpink;
+  background-color: $ggrey;
   color: black;
   font-weight: 500;
   }
@@ -55,7 +59,7 @@ word-break: break-all;
   text-align:center;
   padding: 6px 23px;
   font-weight: 700;
-  background-color: $rred;
+  background-color: $gred;
   width: 170px;
   border-radius: 30px;
   font-size: 1.0rem;
@@ -64,10 +68,10 @@ word-break: break-all;
 
 // footer
 .list-customclass {
-background-color: $rred;
+background-color: $gred;
 }
 
 .credit-customclass{
-  background-color: $rred;
+  background-color: $gred;
   text-align: center;
 }
