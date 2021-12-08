@@ -1,0 +1,94 @@
+/* navbar
+%nav.navbar.navbar-light.navbar-customclass
+  .container-fluid
+  .bar-search
+    = icon("fas", "bars", class: "bars-icon")
+    = icon("fas", "search", class: "search-icon")
+  %a.navbar-brand{:href => "#"}
+    = icon("fas", "mug-hot", class: "coffee-icon")
+    Fukusuke Coffee
+  .like-cart
+    = icon("fas", "heart", class: "heart-icon")
+    = icon("fas", "shopping-cart", class: "shopping-icon")
+/* navtab
+%ul.nav.justify-content-center.navtab-customclass
+  %li.nav-item
+    %a.nav-link.active{"aria-current" => "page", :href => "#"} Fukusukeとは
+  %li.nav-item
+    %a.nav-link{:href => "#"} 使い方
+  %li.nav-item
+    %a.nav-link{:href => "#"} 読みもの
+  %li.nav-item
+    %a.nav-link.disabled{"aria-disabled" => "true", :href => "#", :tabindex => "-1"} お買い物
+/* main
+%body.body-customclass
+  .container-fluid.main-container-class
+    .card.info-customclass
+      .card-body
+        = icon("fas", "bullhorn", class: "bullhorn-icon")
+        母の日ギフトあります
+    .card.today-customclass
+      .card-body
+        %h5.card-title.card-title-customclass 4月24日(金)
+        %h6.card-subtitle.mb-2 営業時間 11:00-18:00
+        %p.card-text 本日のおすすめコーヒーはエチオピアナチュラルです！
+        %a.card-link{:href => "#"} 店舗情報
+  .container.title-class
+    特集
+#carouselExampleSlidesOnly.carousel.slide{"data-bs-ride" => "carousel"}
+  .carousel-inner
+    .carousel-item.active
+      %img.d-block.w-100{:alt => "...", :src => "https://kutsulogcafe.com/wp-content/uploads/2021/01/ROKUMEI4.jpg"}/
+    .carousel-item
+      %img.d-block.w-100{:alt => "...", :src => "https://cdn.macaro-ni.jp/image/summary/87/87791/nz38P2MMuNrshYui8gizn4mbyxXXSEX9rzqMIjkF.jpeg?p=medium_wp"}/
+    .carousel-item
+      %img.d-block.w-100{:alt => "...", :src => "https://image.rakuten.co.jp/ceecloud/cabinet/07589944/ubp-201001-04.jpg"}/
+  .container.title-class
+    新着商品
+  .row.row-cols-1.row-cols-md-2.g-4.top-row-class
+    .col
+      .card
+        %img.card-img-top{:alt => "coffee", :src => "https://kutsulogcafe.com/wp-content/uploads/2021/01/ROKUMEI4.jpg"}/
+        .card-body
+          %h5.card-title コーヒーとペアリングしたい！美味しいパンは？
+          %p.card-text This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+        .card-footer
+          %small.text-muted Last updated 3 mins ago
+  .container.title-class
+    カテゴリー
+  .row.row-cols-2.row-cols-md-3.g-4
+    .col
+      .card
+        %img.card-img-top{:alt => "...", :src => "https://cdn.macaro-ni.jp/image/summary/87/87791/nz38P2MMuNrshYui8gizn4mbyxXXSEX9rzqMIjkF.jpeg?p=medium_wp"}/
+        .card-body
+          %h5.card-title コーヒー豆
+          %p.card-text This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+    .col
+      .card
+        %img.card-img-top{:alt => "...", :src => "https://image.rakuten.co.jp/ceecloud/cabinet/07589944/ubp-201001-04.jpg"}/
+        .card-body
+          %h5.card-title ドリップパック
+          %p.card-text This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+  
+  .container.title-class
+    ランキング
+  .row.row-cols-1.row-cols-md-2.g-4.top-row-class
+    .col
+      .card
+        %img.card-img-top{:alt => "coffee", :src => "https://kutsulogcafe.com/wp-content/uploads/2021/01/ROKUMEI4.jpg"}/
+        .card-body
+          %h5.card-title コーヒーとペアリングしたい！美味しいパンは？
+          %p.card-text This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+        .card-footer
+          %small.text-muted Last updated 3 mins ago
+
+/* footer
+%footer
+  %ul.list-group.list-group-flush
+    %li.list-group-item.list-customclass Fukusukeとは
+    %li.list-group-item.list-customclass オンラインショップ
+    %li.list-group-item.list-customclass 特集
+    %li.list-group-item.list-customclass サイトマップ
+    %li.list-group-item.list-customclass プライバシーポリシー
+  .container-fluid.credit-customclass
+    %small (c)Fukusuke Coffee 2022
