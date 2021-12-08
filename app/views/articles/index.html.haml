@@ -38,7 +38,7 @@
 #carouselExampleSlidesOnly.carousel.slide{"data-bs-ride" => "carousel"}
   .carousel-inner
     .carousel-item.active
-      %img.d-block.w-100{:alt => "...", :src => "https://kutsulogcafe.com/wp-content/uploads/2021/01/ROKUMEI4.jpg"}/
+      %img.d-block.w-100{:alt => "...", :src => "https://images.unsplash.com/photo-1422207134147-65fb81f59e38?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1664&q=80"}/
     .carousel-item
       %img.d-block.w-100{:alt => "...", :src => "https://cdn.macaro-ni.jp/image/summary/87/87791/nz38P2MMuNrshYui8gizn4mbyxXXSEX9rzqMIjkF.jpeg?p=medium_wp"}/
     .carousel-item
@@ -46,16 +46,7 @@
   .container.title-class
     新着商品
   .row.row-cols-1.row-cols-md-2.g-4.top-row-class
-    .col
-      .card
-        %img.card-img-top{alt: "coffee", src: "#{@articles[0].image}"}/
-        .card-body
-          %h5.card-title
-            = @articles[0].title
-          %p.card-text
-            = @articles[0].description
-        .card-footer
-          %small.text-muted Last updated 3 mins ago
+    = render @articles
   .container.title-class
     カテゴリー
   .row.row-cols-2.row-cols-md-3.g-4
