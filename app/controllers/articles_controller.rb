@@ -3,7 +3,7 @@ class ArticlesController < ApplicationController
   before_action :set_article, only:[:show, :edit, :update]
   
   def index 
-      @articles = Article.all
+    @articles = Article.order(updated_at: :desc)
   end
 
   def new
@@ -43,7 +43,7 @@ class ArticlesController < ApplicationController
 
   private
     def article_params
-      params.require(:article).permit(:image,:title,:description)
+      params.require(:article).permit(:image,:title,:description,:price)
     end
 
     def set_article

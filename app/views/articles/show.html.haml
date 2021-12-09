@@ -1,0 +1,23 @@
+= render "template/navbar"
+= render "template/navtab"
+= render "template/breadcrumb"
+
+.container.show-body-customclass
+  = link_to edit_article_path(@article) do
+    = icon("fas", "bars", class: "bars-icon")
+  %img.card-img-top{alt: "coffee", src: "#{@article.image}"}/
+  %h4
+    = @article.title
+  %p
+    =simple_format(@article.description)
+  .cart-customclass.d-grid.gap-2
+    %h4
+      = @article.title
+  %h4! 
+    = "¥#{@article.price}(税込)"
+  .container
+    %button.btn.btn-danger{disabled: "disabled"}
+      = "カートに入れる"
+
+= render "template/footer"
+
