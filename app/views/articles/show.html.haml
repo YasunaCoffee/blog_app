@@ -5,6 +5,8 @@
 .container.show-body-customclass
   = link_to edit_article_path(@article) do
     = icon("fas", "bars", class: "bars-icon")
+  = link_to article_path(@article),method: :delete, data: { confirm: '削除しますか？' }  do
+    = icon("fas", "trash-alt", class: "trash-alt")
   %img.card-img-top{alt: "coffee", src: "#{@article.image}"}/
   %h4
     = @article.title

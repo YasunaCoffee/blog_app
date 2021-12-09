@@ -1,6 +1,6 @@
 class ArticlesController < ApplicationController
   
-  before_action :set_article, only:[:show, :edit, :update]
+  before_action :set_article, only:[:show, :edit, :update, :destroy]
   
   def index 
     @articles = Article.order(updated_at: :desc)
@@ -26,7 +26,11 @@ class ArticlesController < ApplicationController
   end
 
   def destroy
-    @article.destroy
+    if @article.destroy
+      redirect_to root_path
+    else
+      redirect_to @article
+    end
   end
 
   def update
