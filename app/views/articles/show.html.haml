@@ -7,6 +7,11 @@
   %h4
     = @article.title
   %p
-    = @article.description
+    =simple_format(@article.description)
+  .cart-customclass.d-grid.gap-2
+    %h3 
+      = @article.title
+    %button.btn.btn-danger
+      カートに入れる
 
 = render "template/footer"

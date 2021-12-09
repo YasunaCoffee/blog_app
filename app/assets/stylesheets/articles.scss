@@ -1,7 +1,7 @@
 @import "colors";
 
 body{
-  background-color: $rskyblue;
+  // background-color: $rskyblue;
   font-family: 'Noto Sans JP', sans-serif;
 }
 
@@ -78,4 +78,9 @@ background-color: $gred;
 .credit-customclass{
   background-color: $gred;
   text-align: center;
+}
+
+// show page
+.show-body-customclass{
+  background-color: white;
 }
