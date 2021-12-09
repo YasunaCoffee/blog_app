@@ -3,7 +3,8 @@
     %img.card-img-top{alt: "coffee", src: "#{article.image}"}/
     .card-body
       %h5.card-title
-        = article.title
+        = link_to article_path(article) do
+          = article.title
       %p.card-text
         = article.description
     .card-footer

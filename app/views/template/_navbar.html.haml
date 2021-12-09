@@ -1,0 +1,13 @@
+/* navbar
+%nav.navbar.navbar-light.navbar-customclass
+  .container-fluid
+  .bar-search
+    = icon("fas", "bars", class: "bars-icon")
+    = icon("fas", "search", class: "search-icon")
+  %a.navbar-brand{:href => "#"}
+    = icon("fas", "mug-hot", class: "coffee-icon")
+    Fukusuke Coffee
+  .like-cart
+    = link_to new_article_path do
+      = icon("fas", "heart", class: "heart-icon")
+    = icon("fas", "shopping-cart", class: "shopping-icon")

@@ -1,0 +1,12 @@
+= render "template/navbar"
+= render "template/navtab"
+= render "template/breadcrumb"
+
+.container.show-body-customclass
+  %img.card-img-top{alt: "coffee", src: "#{@article.image}"}/
+  %h4
+    = @article.title
+  %p
+    = @article.description
+
+= render "template/footer"

@@ -1,26 +1,5 @@
-/* navbar
-%nav.navbar.navbar-light.navbar-customclass
-  .container-fluid
-  .bar-search
-    = icon("fas", "bars", class: "bars-icon")
-    = icon("fas", "search", class: "search-icon")
-  %a.navbar-brand{:href => "#"}
-    = icon("fas", "mug-hot", class: "coffee-icon")
-    Fukusuke Coffee
-  .like-cart
-    = link_to new_article_path do
-      = icon("fas", "heart", class: "heart-icon")
-    = icon("fas", "shopping-cart", class: "shopping-icon")
-/* navtab
-%ul.nav.justify-content-center.navtab-customclass
-  %li.nav-item
-    %a.nav-link.active{"aria-current" => "page", :href => "#"} Fukusukeとは
-  %li.nav-item
-    %a.nav-link{:href => "#"} 使い方
-  %li.nav-item
-    %a.nav-link{:href => "#"} 読みもの
-  %li.nav-item
-    %a.nav-link.disabled{"aria-disabled" => "true", :href => "#", :tabindex => "-1"} お買い物
+= render "template/navbar"
+= render "template/navtab"
 /* main
 %body.body-customclass
   .container-fluid.main-container-class
@@ -75,14 +54,4 @@
           %p.card-text This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
         .card-footer
           %small.text-muted Last updated 3 mins ago
-
-/* footer
-%footer
-  %ul.list-group.list-group-flush
-    %li.list-group-item.list-customclass Fukusukeとは
-    %li.list-group-item.list-customclass オンラインショップ
-    %li.list-group-item.list-customclass 特集
-    %li.list-group-item.list-customclass サイトマップ
-    %li.list-group-item.list-customclass プライバシーポリシー
-  .container-fluid.credit-customclass
-    %small (c)Fukusuke Coffee 2022
+= render "template/footer"
