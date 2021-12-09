@@ -9,9 +9,13 @@
   %p
     =simple_format(@article.description)
   .cart-customclass.d-grid.gap-2
-    %h3 
+    %h4
       = @article.title
-    %button.btn.btn-danger
-      カートに入れる
+  %h4! 
+    = "¥#{@article.price}(税込)"
+  .container
+    %button.btn.btn-danger{disabled: "disabled"}
+      = "カートに入れる"
 
 = render "template/footer"
+
