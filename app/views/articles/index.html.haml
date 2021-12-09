@@ -8,7 +8,8 @@
     = icon("fas", "mug-hot", class: "coffee-icon")
     Fukusuke Coffee
   .like-cart
-    = icon("fas", "heart", class: "heart-icon")
+    = link_to new_article_path do
+      = icon("fas", "heart", class: "heart-icon")
     = icon("fas", "shopping-cart", class: "shopping-icon")
 /* navtab
 %ul.nav.justify-content-center.navtab-customclass
