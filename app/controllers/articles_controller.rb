@@ -13,8 +13,8 @@ class ArticlesController < ApplicationController
   end
   
   def create
-    article = current_user.article.new(article_params)
-    if article.save!
+    @article = current_user.articles.new(article_params)
+    if @article.save!
       redirect_to articles_path
     else
       render :new
