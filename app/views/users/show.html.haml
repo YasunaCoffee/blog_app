@@ -1,15 +1,16 @@
 = render "template/navbar"
-.container.title-class.mt-3
-  会員証
--# main
-.p-3
-  %img.img-thumbnail.d-block.mx-auto{alt: "code",src: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/QR_code_desktop_Japanese_Wikipedia.svg/440px-QR_code_desktop_Japanese_Wikipedia.svg.png"}/
-  .card.m-2
-    .card-header
-      #{@user.name}様のマイレージポイント
-    .card-body
-      %blockquote.blockquote.mb-0
-        %p 1,200
-        %footer.blockquote-footer
-          ベーシックステージ
+.container-fluid.maxWidth
+  .container.title-class.mt-3
+    会員証
+  -# main
+  .p-3
+    %img.img-thumbnail.d-block.mx-auto{alt: "code",src: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/QR_code_desktop_Japanese_Wikipedia.svg/440px-QR_code_desktop_Japanese_Wikipedia.svg.png"}/
+    .card.m-2
+      .card-header
+        #{@user.name}様のマイレージポイント
+      .card-body
+        %blockquote.blockquote.mb-0
+          %p 1,200
+          %footer.blockquote-footer
+            ベーシックステージ
 = render "template/footer"
