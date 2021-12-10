@@ -2,7 +2,7 @@
 = render "template/navtab"
 = render "template/breadcrumb"
 
-.container.show-body-customclass
+.container.show-body-customclass.maxWidth
   -if user_signed_in?
     = link_to edit_article_path(@article) do
       = icon("fas", "bars", class: "bars-icon")
