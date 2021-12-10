@@ -4,7 +4,8 @@
       %img.card-img-top{alt: "coffee", src: "#{article.image}"}/
     .card-body
       %h5.card-title
-        = article.title
+        = link_to article_path(article) do
+          = article.title
     .card-footer
       %small.text-muted
         = article.updated_at.strftime("%Y年%-m月%-d日")
