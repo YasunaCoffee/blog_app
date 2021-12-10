@@ -1,2 +1,36 @@
-%h2　会員ページ
-%h3 #{@user.name}様
+/* navbar
+%nav.navbar.navbar-light.navbar-customclass.sticky-top
+  .container-fluid
+  .bar-search
+    = icon("fas", "bars", class: "bars-icon")
+    = icon("fas", "search", class: "search-icon")
+  =link_to root_path do
+    .navbar-brand
+      = icon("fas", "mug-hot", class: "coffee-icon")
+      会員証
+  .like-cart
+    - if user_signed_in?
+      = link_to new_article_path do
+        = icon("fas", "pen", class: "pen")
+    -if user_signed_in?
+      =link_to current_user do
+        = icon("fas", "user-circle", class: "user-circle")
+    -else
+      =link_to new_user_session_path do
+        = icon("fas", "sign-in-alt", class: "sign-in-alt")
+    - if user_signed_in?
+      = link_to destroy_user_session_path, method: :delete do
+        = icon("fas", "sign-out-alt", class: "sign-out-alt")
+
+-# main
+.p-3
+  %img.img-thumbnail.d-block.mx-auto{alt: "code",src: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/QR_code_desktop_Japanese_Wikipedia.svg/440px-QR_code_desktop_Japanese_Wikipedia.svg.png"}/
+  .card.m-2
+    .card-header
+      #{@user.name}様のマイレージポイント
+    .card-body
+      %blockquote.blockquote.mb-0
+        %p 1,200
+        %footer.blockquote-footer
+          ベーシックステージ
+= render "template/footer"

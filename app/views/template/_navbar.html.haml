@@ -1,5 +1,5 @@
 /* navbar
-%nav.navbar.navbar-light.navbar-customclass
+%nav.navbar.navbar-light.navbar-customclass.sticky-top
   .container-fluid
   .bar-search
     = icon("fas", "bars", class: "bars-icon")
@@ -17,7 +17,7 @@
         = icon("fas", "user-circle", class: "user-circle")
     -else
       =link_to new_user_session_path do
-        = icon("fas", "user-circle", class: "user-circle")
+        = icon("fas", "sign-in-alt", class: "sign-in-alt")
     - if user_signed_in?
       = link_to destroy_user_session_path, method: :delete do
         = icon("fas", "sign-out-alt", class: "sign-out-alt")
