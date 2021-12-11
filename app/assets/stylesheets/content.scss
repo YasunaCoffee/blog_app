@@ -1,21 +1,20 @@
 .content-custom-class{
-  background: linear-gradient(to bottom, #fff 0%, #fff 30%, $ggreen 30%,  $gblue 100%);}
+  background: linear-gradient(to bottom, $ggrey 0%, $ggrey 30%, $gblue 30%,  $gblue 100%);}
 
 .card-custom-class{
   padding: 2em;
-  height: 20em;
 }
 
 .color-box-top{
   margin-top: 8em;
-  height: 5em;
-  width: 2em;
+  height: 2em;
+  width: 3em;
   background-color: $gred;
 }
 
 .color-box-bottom{
   margin-top: 2em;
-  height: 5em;
-  width: 2em;
+  height: 2em;
+  width: 3em;
   background-color: $gred;
 }
