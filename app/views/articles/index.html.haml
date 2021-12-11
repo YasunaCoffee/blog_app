@@ -4,20 +4,22 @@
 %body.body-customclass
   .container-fluid.main-container-class.maxWidth
     .container-fluid.header-custom-class
-      .card.info-customclass
+      .card.info-customclass.rounded-0
         .card-body
           = icon("fas", "bullhorn", class: "bullhorn-icon")
           母の日ギフトあります
-      .card.today-customclass
+      .card.today-customclass.rounded-0
         .card-body
           %h5.card-title.card-title-customclass 4月24日(金)
           %h6.card-subtitle.mb-2 営業時間 11:00-18:00
           %p.card-text 本日のおすすめコーヒーはエチオピアナチュラルです！
           %a.card-link{:href => "#"} 店舗情報
-    .container.title-class
-      特集
-    .container.title-class
-      新着商品
+  .title-class.d-flex.justify-content-start
+    New Arrival
+  .content-custom-class
+    = render @articles
+  .title-class.d-flex.justify-content-start
+    Pick Up
   .content-custom-class
     = render @articles
 = render "template/footer"

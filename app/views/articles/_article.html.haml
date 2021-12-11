@@ -1,7 +1,7 @@
 .content
   .container.card-custom-class.position-relative
     .color-box-bottom.float-start.text-center new
-    .card
+    .card.border-0.rounded-0
       .row.g-0 
         .col-6
           .card-body 
@@ -13,4 +13,4 @@
                 = article.description.truncate(100)
         .col-6
           = link_to article_path(article) do
-            %img.card-img-top{alt: "coffee", src: "#{article.image}"}
+            %img.card-img-top.rounded-0{alt: "coffee", src: "#{article.image}"}
