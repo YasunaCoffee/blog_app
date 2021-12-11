@@ -18,28 +18,28 @@
       特集
     .container.title-class
       新着商品
-    .row.row-cols-2.row-cols-md-3.g-4.top-row-class
-      = render @articles
-    .container.title-class
-      カテゴリー
-    .row.row-cols-2.row-cols-md-3.g-4
-      .col
-        .card
-          %img.card-img-top{:alt => "...", :src => "https://cdn.macaro-ni.jp/image/summary/87/87791/nz38P2MMuNrshYui8gizn4mbyxXXSEX9rzqMIjkF.jpeg?p=medium_wp"}/
-          .card-body
-            %h5.card-title コーヒー豆
-            %p.card-text This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-      .col
-        .card
-          %img.card-img-top{:alt => "...", :src => "https://image.rakuten.co.jp/ceecloud/cabinet/07589944/ubp-201001-04.jpg"}/
-          .card-body
-            %h5.card-title ドリップパック
-            %p.card-text This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-    
-    .container.title-class
-      ランキング
-    .row.row-cols-1.row-cols-md-4.g-4.top-row-class
-      = render @articles
+    -# .row.row-cols-2.row-cols-md-3.g-4.top-row-class
+    -#   = render @articles
+  = render 'template/content'
+  .container.title-class
+    カテゴリー
+  .row.row-cols-2.row-cols-md-3.g-4
+    .col
+      .card
+        %img.card-img-top{:alt => "...", :src => "https://cdn.macaro-ni.jp/image/summary/87/87791/nz38P2MMuNrshYui8gizn4mbyxXXSEX9rzqMIjkF.jpeg?p=medium_wp"}/
+        .card-body
+          %h5.card-title コーヒー豆
+          %p.card-text This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+    .col
+      .card
+        %img.card-img-top{:alt => "...", :src => "https://image.rakuten.co.jp/ceecloud/cabinet/07589944/ubp-201001-04.jpg"}/
+        .card-body
+          %h5.card-title ドリップパック
+          %p.card-text This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+  
+  .container.title-class
+    ランキング
+  = render 'template/content'
 
 
 = render "template/footer"

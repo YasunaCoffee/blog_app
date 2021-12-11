@@ -1,7 +1,21 @@
 .content-custom-class{
-background-color: $ggreen;
-}
+  background: linear-gradient(to right, #fff 0%, #fff 30%, lightblue 30%,  lightblue 100%);}
 
 .card-custom-class{
-  padding: 20px;
+  padding: 2em;
+  height: 20em;
+}
+
+.color-box-top{
+  margin-top: 8em;
+  height: 5em;
+  width: 2em;
+  background-color: $gblue;
+}
+
+.color-box-bottom{
+  margin-top: 2em;
+  height: 5em;
+  width: 2em;
+  background-color: $ggrey;
 }

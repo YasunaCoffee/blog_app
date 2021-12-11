@@ -1,11 +1,28 @@
-.col
+-# .col
+-#   .card
+-#     = link_to article_path(article) do
+-#       %img.card-img-top{alt: "coffee", src: "#{article.image}"}/
+-#     .card-body
+-#       %h5.card-title
+-#         = link_to article_path(article) do
+-#           = article.title
+-#     .card-footer
+-#       %small.text-muted
+-#         = article.updated_at.strftime("%Y年%-m月%-d日")
+
+.container.card-custom-class.position-relative
+  .color-box-top.float-start
+  .color-box-bottom.float-end
   .card
-    = link_to article_path(article) do
-      %img.card-img-top{alt: "coffee", src: "#{article.image}"}/
-    .card-body
-      %h5.card-title
+    .row.g-0 
+      .col-6
+        .card-body 
+          %h5.card-title
+            = link_to article_path(article) do
+              = article.title
+          .card-text
+            = link_to article_path(article) do
+              = article.description.truncate(20)
+      .col-6
         = link_to article_path(article) do
-          = article.title
-    .card-footer
-      %small.text-muted
-        = article.updated_at.strftime("%Y年%-m月%-d日")
+          %img.card-img-top{alt: "coffee", src: "#{article.image}"}
