@@ -1,6 +1,11 @@
-.content-custom-class{
-  background: linear-gradient(to bottom, white 0%, white 20%, $ggreen 20%,  $ggreen 100%);
+.content-custom-class-green{
+  // background: linear-gradient(to bottom, white 0%, white 20%, $ggreen 20%,  $ggreen 100%);
+background-color: $ggreen;
+}
 
+.content-custom-class-grey{
+  // background: linear-gradient(to bottom, white 0%, white 20%, $ggrey 20%,  $ggrey 100%);
+background-color: $gblue;
 }
 
 .card-custom-class{
