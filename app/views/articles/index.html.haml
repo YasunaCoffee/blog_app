@@ -6,10 +6,13 @@
     .title-class-new.d-flex.justify-content-start
       New Arrival
     .content-custom-class-green
-    = render @articles
+      %ul.cardys
+        = render @articles
   .content-wrap-pickup
     .title-class.d-flex.justify-content-start
       Pick Up
     .content-custom-class-grey
-      = render @articles
+      %ul.cardys
+        = render @articles
+= render "template/card"
 = render "template/footer"

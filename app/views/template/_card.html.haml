@@ -1,0 +1,18 @@
+-# %ul.cardys
+-#   %li
+-#     .cardy
+-#       = link_to article_path(article) do
+-#         %img.card-img-top.rounded-0{alt: "coffee", src: "#{article.image}"}
+-#       .cardy__overlay
+-#         .cardy__header
+-#           %svg.cardy__arc{:xmlns => "http://www.w3.org/2000/svg"}
+-#             %path
+-#           -# %img.cardy__thumb{:alt => "", :src => "https://i.imgur.com/7D7I6dI.png"}/
+-#           .cardy__header-text
+-#             %h3.cardy__title
+-#               = link_to article_path(article) do
+-#                 = article.title
+-#             -# %span.cardy__status 1 hour ago
+-#         %p.cardy__description
+-#           = link_to article_path(article) do
+-#             = article.description.truncate(100)
