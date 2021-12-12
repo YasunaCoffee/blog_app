@@ -20,7 +20,7 @@
       - if user_signed_in?
         = link_to destroy_user_session_path, method: :delete do
           = icon("fas", "sign-out-alt", class: "icon")
-  .container.header-custom-class
+  .container.header-custom-class.d-block
     .card.info-customclass.rounded-0
       .card-body
         = icon("fas", "bullhorn", class: "bullhorn-icon")

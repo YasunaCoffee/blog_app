@@ -1,11 +1,21 @@
+.content-wrap-new{
+  height: 100vh;
+  background-color: $white;
+}
+
+.content-wrap-pickup{
+  height: 100vh;
+  background-color: $grey;
+}
+
 .content-custom-class-green{
   // background: linear-gradient(to bottom, white 0%, white 20%, $ggreen 20%,  $ggreen 100%);
-background-color: $ggreen;
+background-color: $white;
 }
 
 .content-custom-class-grey{
   // background: linear-gradient(to bottom, white 0%, white 20%, $ggrey 20%,  $ggrey 100%);
-background-color: $gblue;
+background-color: $grey;
 }
 
 .card-custom-class{
@@ -16,5 +26,5 @@ background-color: $gblue;
   margin-top: 2em;
   height: 2em;
   width: 3em;
-  background-color: $gred;
+  background-color: $orange;
 }

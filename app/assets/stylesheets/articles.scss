@@ -10,7 +10,7 @@ a{
 }
 
 a:hover{
-  color: $gblue;
+  color: $grey;
 }
 
 .maxWidth{
@@ -20,14 +20,14 @@ a:hover{
 // navbar
 .navbar-customclass{
 height: 100vh;
-color: $ggrey;
+color: white;
 padding: 20px;
 font-family: 'Kanit', sans-serif;
 background-image: url('https://images.unsplash.com/photo-1530592126211-8294b41580ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1286&q=80')
 };
 
 .nabvar-bland-custom{
-  color: $ggrey;
+  color: white;
   font-size: 1.5em;
 }
 
@@ -36,7 +36,7 @@ background-image: url('https://images.unsplash.com/photo-1530592126211-8294b4158
 }
 
 a .icon{
-  color: $ggrey
+  color: white
 }
 
 .navtab-customclass{
@@ -46,7 +46,7 @@ a .icon{
 }
 
 .nav-link{
-  color: $cblue
+  color: $grey
 }
 
 // body
@@ -56,8 +56,8 @@ word-break: break-all;
 }
 
 .info-customclass{
-  color: black;
-  background-color: $ggrey;
+  color: white;
+  background-color: $grey;
 }
 
 .main-container-class{
@@ -71,8 +71,8 @@ word-break: break-all;
 
 .today-customclass{
   margin-top: 20px;
-  background-color: $ggrey;
-  color: black;
+  background-color: $grey;
+  color: white;
   font-weight: 500;
   padding: 0.5em 1em;
   margin: 2em 0;
@@ -86,20 +86,30 @@ word-break: break-all;
   // margin-top: 10px;
   // margin-bottom: 10px;
   padding: 6px 23px;
-  background-color: $gblue;
-  width: 170px;
+  background-color: $grey;
+  // width: 170px;
+  font-size: 1.3em;
+  color: black;
+}
+
+.title-class-new{
+  // margin-top: 10px;
+  // margin-bottom: 10px;
+  padding: 6px 23px;
+  background-color: $white;
+  // width: 170px;
   font-size: 1.3em;
   color: black;
 }
 
 // footer
 .list-customclass {
-background-color: $gred;
+background-color: $orange;
 color: white;
 }
 
 .credit-customclass{
-  background-color: $gred;
+  background-color: $orange;
   text-align: center;
   color: white;
 }

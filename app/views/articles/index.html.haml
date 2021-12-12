@@ -2,12 +2,14 @@
 = render "template/navtab"
 /* main
 %body.body-customclass
-  .title-class.d-flex.justify-content-start
-    New Arrival
-  .content-custom-class-green
+  .content-wrap-new
+    .title-class-new.d-flex.justify-content-start
+      New Arrival
+    .content-custom-class-green
     = render @articles
-  .title-class.d-flex.justify-content-start
-    Pick Up
-  .content-custom-class-grey
-    = render @articles
+  .content-wrap-pickup
+    .title-class.d-flex.justify-content-start
+      Pick Up
+    .content-custom-class-grey
+      = render @articles
 = render "template/footer"
