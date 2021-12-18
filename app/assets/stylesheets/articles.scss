@@ -7,11 +7,10 @@ body{
 
 a{
   text-decoration: none;
-  color: black;
 }
 
 a:hover{
-  color: $gblue;
+  color: $grey;
 }
 
 .maxWidth{
@@ -20,19 +19,34 @@ a:hover{
 
 // navbar
 .navbar-customclass{
-background-color: $gred;
-padding: 10px;
+height: 100vh;
+color: white;
+padding: 20px;
 font-family: 'Kanit', sans-serif;
-font-weight: bold
+background-image: url('https://cdn.shopify.com/s/files/1/0518/2491/8698/products/IMG_0747_1296x.jpg?v=1626342153')
 };
+
+.nabvar-bland-custom{
+  color: white;
+  font-size: 1.5em;
+}
+
+.icon{
+  font-size: 1.2em;
+}
+
+a .icon{
+  color: white
+}
 
 .navtab-customclass{
   font-family: 'Kanit', sans-serif;
-  background-color: $ggrey;
+  background-color: white;
+  height: 10vh
 }
 
 .nav-link{
-  color: $cblue
+  color: $grey
 }
 
 // body
@@ -42,8 +56,8 @@ word-break: break-all;
 }
 
 .info-customclass{
-  border: solid  1px black
-  // border-bottom: solid 1px $gred;
+  color: white;
+  background-color: $grey;
 }
 
 .main-container-class{
@@ -57,40 +71,29 @@ word-break: break-all;
 
 .today-customclass{
   margin-top: 20px;
-  background-color: white;
-  color: black;
+  background-color: $grey;
+  color: white;
   font-weight: 500;
   padding: 0.5em 1em;
   margin: 2em 0;
-  font-weight: bold;
-  border: solid 1px black;
   }
 
   .card-title-customclass{
     font-size: 1.5rem;
   }
   
-.title-class{
-  margin-top: 10px;
-  margin-bottom: 10px;
-  text-align:center;
-  padding: 6px 23px;
-  font-weight: 700;
-  background-color: $gblue;
-  width: 170px;
-  border-radius: 30px;
-  font-size: 1.0rem;
-  color: black
-}
+
 
 // footer
 .list-customclass {
-background-color: $gred;
+background-color: $orange;
+color: white;
 }
 
 .credit-customclass{
-  background-color: $gred;
+  background-color: $orange;
   text-align: center;
+  color: white;
 }
 
 // show page

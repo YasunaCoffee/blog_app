@@ -1,11 +1,18 @@
-.col
-  .card
+%li
+  .cardy
     = link_to article_path(article) do
-      %img.card-img-top{alt: "coffee", src: "#{article.image}"}/
-    .card-body
-      %h5.card-title
+      %img.card-img-top.rounded-0{alt: "coffee", src: "#{article.image}"}
+    .cardy__overlay
+      .cardy__header
+        %svg.cardy__arc
+          %path
+        -# %img.cardy__thumb{:alt => "", :src => "https://i.imgur.com/7D7I6dI.png"}/
+        .cardy__header-text
+          %h3.cardy__title
+            = link_to article_path(article) do
+              = article.title
+          %span.cardy__status
+            ¥#{article.price}
+      %p.cardy__description
         = link_to article_path(article) do
-          = article.title
-    .card-footer
-      %small.text-muted
-        = article.updated_at.strftime("%Y年%-m月%-d日")
+          = article.description.truncate(100)

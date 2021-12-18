@@ -2,44 +2,17 @@
 = render "template/navtab"
 /* main
 %body.body-customclass
-  .container-fluid.main-container-class.maxWidth
-    .container-fluid.header-custom-class
-      .card.info-customclass
-        .card-body
-          = icon("fas", "bullhorn", class: "bullhorn-icon")
-          母の日ギフトあります
-      .card.today-customclass
-        .card-body
-          %h5.card-title.card-title-customclass 4月24日(金)
-          %h6.card-subtitle.mb-2 営業時間 11:00-18:00
-          %p.card-text 本日のおすすめコーヒーはエチオピアナチュラルです！
-          %a.card-link{:href => "#"} 店舗情報
-    .container.title-class
-      特集
-    .container.title-class
-      新着商品
-    .row.row-cols-2.row-cols-md-3.g-4.top-row-class
-      = render @articles
-    .container.title-class
-      カテゴリー
-    .row.row-cols-2.row-cols-md-3.g-4
-      .col
-        .card
-          %img.card-img-top{:alt => "...", :src => "https://cdn.macaro-ni.jp/image/summary/87/87791/nz38P2MMuNrshYui8gizn4mbyxXXSEX9rzqMIjkF.jpeg?p=medium_wp"}/
-          .card-body
-            %h5.card-title コーヒー豆
-            %p.card-text This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-      .col
-        .card
-          %img.card-img-top{:alt => "...", :src => "https://image.rakuten.co.jp/ceecloud/cabinet/07589944/ubp-201001-04.jpg"}/
-          .card-body
-            %h5.card-title ドリップパック
-            %p.card-text This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-    
-    .container.title-class
-      ランキング
-    .row.row-cols-1.row-cols-md-4.g-4.top-row-class
-      = render @articles
-
-
+  .content-wrap-new
+    .title-class-new.d-flex.justify-content-start
+      New Arrival
+    .content-custom-class-green
+      %ul.cardys
+        = render @articles
+  .content-wrap-pickup
+    .title-class.d-flex.justify-content-start
+      Pick Up
+    .content-custom-class-grey
+      %ul.cardys
+        = render @articles
+= render "template/card"
 = render "template/footer"

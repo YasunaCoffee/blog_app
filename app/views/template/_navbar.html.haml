@@ -1,23 +1,33 @@
 /* navbar
-%nav.navbar.navbar-light.navbar-customclass.sticky-top
-  .container-fluid
-  .bar-search
-    = icon("fas", "bars", class: "bars-icon")
-    = icon("fas", "search", class: "search-icon")
-  =link_to root_path do
-    .navbar-brand
-      = icon("fas", "mug-hot", class: "coffee-icon")
-      Fukusuke Coffee
-  .like-cart
-    - if user_signed_in?
-      = link_to new_article_path do
-        = icon("fas", "pen", class: "pen")
-    -if user_signed_in?
-      =link_to current_user do
-        = icon("fas", "user-circle", class: "user-circle")
-    -else
-      =link_to new_user_session_path do
-        = icon("fas", "sign-in-alt", class: "sign-in-alt")
-    - if user_signed_in?
-      = link_to destroy_user_session_path, method: :delete do
-        = icon("fas", "sign-out-alt", class: "sign-out-alt")
+%nav.navbar.navbar-light.navbar-customclass
+  .nav-group.fixed-top.d-flex.align-items-baseline.justify-content-between
+    .bar-search.p-3
+      = icon("fas", "bars", class: "icon")
+    =link_to root_path do
+      .navbar-brand
+        .nabvar-bland-custom.p-2
+          Fukusuke Coffee
+    .like-cart.p-3
+      - if user_signed_in?
+        = link_to new_article_path do
+          = icon("fas", "pen", class: "icon")
+      -if user_signed_in?
+        =link_to current_user do
+          = icon("fas", "user-circle", class: "icon")
+      -else
+        =link_to new_user_session_path do
+          = icon("fas", "sign-in-alt", class: "icon")
+      - if user_signed_in?
+        = link_to destroy_user_session_path, method: :delete do
+          = icon("fas", "sign-out-alt", class: "icon")
+  .container.header-custom-class.d-block
+    .card.info-customclass.rounded-0
+      .card-body
+        = icon("fas", "bullhorn", class: "bullhorn-icon")
+        母の日ギフトあります
+    .card.today-customclass.rounded-0
+      .card-body
+        %h5.card-title.card-title-customclass 4月24日(金)
+        %h6.card-subtitle.mb-2 営業時間 11:00-18:00
+        %p.card-text 本日のおすすめコーヒーはエチオピアナチュラルです！
+        %a.card-link{:href => "#"} 店舗情報
