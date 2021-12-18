@@ -58,6 +58,7 @@ gem "haml-rails", "~> 2.0"
 gem 'jquery-rails'
 gem 'font-awesome-sass', '~> 5.15.1'
 gem 'devise'
+gem 'barby', '~> 0.6.8'
 
 
 

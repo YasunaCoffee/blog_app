@@ -5,6 +5,7 @@ class ArticlesController < ApplicationController
 
   def index 
     @articles = Article.order(updated_at: :desc)
+    @barcode = Barcode.new(491234567890)
   end
 
   def new

@@ -5,6 +5,7 @@
   .content-wrap-new
     .title-class-new.d-flex.justify-content-start
       New Arrival
+      = image_tag @barcode.to_png_image
     .content-custom-class-green
       %ul.cardys
         = render @articles
