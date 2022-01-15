@@ -5,8 +5,10 @@
       = icon("fas", "bars", class: "icon")
     =link_to root_path do
       .navbar-brand
-        .nabvar-bland-custom.p-2
-          Fukusuke Coffee
+        .container-fluid
+          .nabvar-bland-custom.p-2
+            %img.d-inline-block.align-text-top{:alt => "", :height => "60", :src => "/assets/logo2.png", :width => "60"}/
+            Fukusuke Coffee
     .like-cart.p-3
       - if user_signed_in?
         = link_to new_article_path do
