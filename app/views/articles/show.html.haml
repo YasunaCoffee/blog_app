@@ -1,5 +1,6 @@
+= render "template/navbar"
+= render "template/navtab"
 = render "template/breadcrumb"
-
 .container.show-body-customclass.maxWidth.p-3
   -if user_signed_in?
     = link_to edit_article_path(@article) do
