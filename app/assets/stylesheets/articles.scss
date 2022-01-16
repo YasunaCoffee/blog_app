@@ -19,9 +19,9 @@ a:hover{
 
 // navbar
 .navbar-customclass{
-height: 100vh;
+// height: 100vh;
 color: white;
-padding: 20px;
+padding: 10px;
 font-family: 'Kanit', sans-serif;
 background-image: url('https://cdn.shopify.com/s/files/1/0518/2491/8698/products/IMG_0747_1296x.jpg?v=1626342153')
 };
@@ -86,12 +86,12 @@ word-break: break-all;
 
 // footer
 .list-customclass {
-background-color: $orange;
+background-color: $bage;
 color: white;
 }
 
 .credit-customclass{
-  background-color: $orange;
+  background-color: $bage;
   text-align: center;
   color: white;
 }

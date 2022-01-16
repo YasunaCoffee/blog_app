@@ -8,7 +8,6 @@
         .container-fluid
           .nabvar-bland-custom.p-2
             %img.d-inline-block.align-text-top{:alt => "", :height => "60", :src => "/assets/logo2.png", :width => "60"}/
-            Fukusuke Coffee
     .like-cart.p-3
       - if user_signed_in?
         = link_to new_article_path do
@@ -22,14 +21,14 @@
       - if user_signed_in?
         = link_to destroy_user_session_path, method: :delete do
           = icon("fas", "sign-out-alt", class: "icon")
-  .container.header-custom-class.d-block
-    .card.info-customclass.rounded-0
-      .card-body
-        = icon("fas", "bullhorn", class: "bullhorn-icon")
-        母の日ギフトあります
-    .card.today-customclass.rounded-0
-      .card-body
-        %h5.card-title.card-title-customclass 4月24日(金)
-        %h6.card-subtitle.mb-2 営業時間 11:00-18:00
-        %p.card-text 本日のおすすめコーヒーはエチオピアナチュラルです！
-        %a.card-link{:href => "#"} 店舗情報
+  -# .container.header-custom-class.d-block
+  -#   .card.info-customclass.rounded-0
+  -#     .card-body
+  -#       = icon("fas", "bullhorn", class: "bullhorn-icon")
+  -#       母の日ギフトあります
+  -#   .card.today-customclass.rounded-0
+  -#     .card-body
+  -#       %h5.card-title.card-title-customclass 4月24日(金)
+  -#       %h6.card-subtitle.mb-2 営業時間 11:00-18:00
+  -#       %p.card-text 本日のおすすめコーヒーはエチオピアナチュラルです！
+  -#       %a.card-link{:href => "#"} 店舗情報
