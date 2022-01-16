@@ -1,50 +1,11 @@
-.content-wrap-new{
-  background-color: $white;
-  height: 100vh;
-}
-
-.content-wrap-pickup{
-  background-color: $grey;
-  height: 100vh;
-}
-
-.content-custom-class-green{
-  // background: linear-gradient(to bottom, white 0%, white 20%, $ggreen 20%,  $ggreen 100%);
-background-color: $white;
-}
-
-.content-custom-class-grey{
-  // background: linear-gradient(to bottom, white 0%, white 20%, $ggrey 20%,  $ggrey 100%);
-background-color: $grey;
-}
-
-.card-custom-class{
-  padding: 2em;
-}
-
-.color-box-bottom{
-  margin-top: 2em;
-  height: 2em;
-  width: 3em;
-  background-color: $orange;
-}
-
 .title-class{
-  // margin-top: 10px;
-  // margin-bottom: 10px;
   padding: 6px 23px;
-  background-color: $grey;
-  // width: 170px;
   font-size: 1.3em;
-  color: white;
+  color: black;
 }
 
 .title-class-new{
-  // margin-top: 10px;
-  // margin-bottom: 10px;
   padding: 6px 23px;
-  background-color: $white;
-  // width: 170px;
   font-size: 1.3em;
   color: black;
 }

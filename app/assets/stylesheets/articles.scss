@@ -1,7 +1,6 @@
 @import "colors";
 
 body{
-  // background-color: $rskyblue;
   font-family: 'Noto Sans JP', sans-serif;
 }
 
@@ -17,83 +16,9 @@ a:hover{
   max-width: 1170px;
 }
 
-// navbar
-.navbar-customclass{
-height: 100vh;
-color: white;
-padding: 20px;
-font-family: 'Kanit', sans-serif;
-background-image: url('https://cdn.shopify.com/s/files/1/0518/2491/8698/products/IMG_0747_1296x.jpg?v=1626342153')
-};
-
-.nabvar-bland-custom{
-  color: white;
-  font-size: 1.5em;
-}
-
-.icon{
-  font-size: 1.2em;
-}
-
-a .icon{
-  color: white
-}
-
-.navtab-customclass{
-  font-family: 'Kanit', sans-serif;
-  background-color: white;
-  height: 10vh
-}
-
-.nav-link{
-  color: $grey
-}
-
 // body
-
 .body-customclass{
 word-break: break-all;
-}
-
-.info-customclass{
-  color: white;
-  background-color: $grey;
-}
-
-.main-container-class{
-  padding: 10px 50px;
-  // background-color: $gblue;
-}
-
-.top-row-class{
-  margin-bottom: 20px;
-}
-
-.today-customclass{
-  margin-top: 20px;
-  background-color: $grey;
-  color: white;
-  font-weight: 500;
-  padding: 0.5em 1em;
-  margin: 2em 0;
-  }
-
-  .card-title-customclass{
-    font-size: 1.5rem;
-  }
-  
-
-
-// footer
-.list-customclass {
-background-color: $orange;
-color: white;
-}
-
-.credit-customclass{
-  background-color: $orange;
-  text-align: center;
-  color: white;
 }
 
 // show page
