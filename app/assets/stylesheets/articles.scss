@@ -1,7 +1,6 @@
 @import "colors";
 
 body{
-  // background-color: $rskyblue;
   font-family: 'Noto Sans JP', sans-serif;
 }
 
@@ -21,34 +20,6 @@ a:hover{
 .body-customclass{
 word-break: break-all;
 }
-
-.info-customclass{
-  color: white;
-  background-color: $grey;
-}
-
-.main-container-class{
-  padding: 10px 50px;
-  // background-color: $gblue;
-}
-
-.top-row-class{
-  margin-bottom: 20px;
-}
-
-.today-customclass{
-  margin-top: 20px;
-  background-color: $grey;
-  color: white;
-  font-weight: 500;
-  padding: 0.5em 1em;
-  margin: 2em 0;
-  }
-
-  .card-title-customclass{
-    font-size: 1.5rem;
-  }
-  
 
 // show page
 .show-body-customclass{
