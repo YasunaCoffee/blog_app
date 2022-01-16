@@ -26,3 +26,16 @@
   .nav-link{
     color: $grey
   }
+
+  .navbar-toggle{
+    z-index: 2;
+}
+
+  .navbar-brand-center{
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 0;
+      text-align:center;
+      margin: auto;
+  }

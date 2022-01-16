@@ -1,14 +1,16 @@
 /* navbar
-%nav.navbar.navbar-light.navbar-customclass
-  .nav-group.fixed-top.d-flex.align-items-baseline.justify-content-between
+%nav.navbar.navbar-light.navbar-customclass.navbar-toggle
+  .nav-group.fixed-top.align-items-baseline.d-flex.justify-content-between
+    .bar-search.p-4
+      = icon("fas", "bars", class: "icon")
     =link_to root_path do
-      .navbar-brand
-        .container-fluid
-          .nabvar-bland-custom.p-2
+      .navbar-brand.navbar-brand-center
+        .container-fluid.p-2
+          .nabvar-bland-custom
             %img.d-inline-block.align-text-top{:alt => "", :height => "60", :src => "/assets/logo2.png", :width => "60"}/
     .like-cart.p-3
       .button.btn.btn-outline-dark.fw-bold
-        今すぐ注文する
+        今すぐ注文
       - if user_signed_in?
         = link_to new_article_path do
           = icon("fas", "pen", class: "icon")
