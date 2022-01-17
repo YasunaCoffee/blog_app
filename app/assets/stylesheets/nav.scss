@@ -1,6 +1,6 @@
 .navbar-customclass{
   color: black;
-  padding: 5px;
+  // padding: 5px;
   font-family: 'Kanit', sans-serif;
   };
 
@@ -32,19 +32,16 @@
 }
 
   .navbar-brand-center{
-      z-index: 1;
       position: absolute;
       width: 100%;
       left: 0;
       top: 0;
       text-align:center;
       margin: auto;
+      // background-color: white;
   }
 
   .like-cart{
     z-index: 3;
   }
 
-  #navbarNav{
-    background-color: $ggrey;
-  }

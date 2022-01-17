@@ -1,9 +1,9 @@
 /* navbar
-%nav.navbar.navbar-light.navbar-customclass
-  .nav-group.fixed-top.align-items-baseline.d-flex.justify-content-between
-    %button.navbar-toggler.navbar-toggle.p-3{"aria-controls" => "navbarNav", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-bs-target" => "#navbarNav", "data-bs-toggle" => "collapse", :type => "button"}
+%nav.navbar.navbar-light.navbar-customclass.m-2
+  .nav-group.fixed-top.d-flex.justify-content-between
+    %button.navbar-toggler.navbar-toggle.bg-body{"aria-controls" => "navbarNav", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-bs-target" => "#navbarNav", "data-bs-toggle" => "collapse", :type => "button"}
       %span.navbar-toggler-icon
-    #navbarNav.collapse.navbar-collapse
+    #navbarNav.collapse.navbar-collapse.bg-light.shadow.rounded.p-3.navbar-toggle
       %ul.navbar-nav
         %li.nav-item
           %a.nav-link.active{"aria-current" => "page", :href => "#"} Home
@@ -13,7 +13,7 @@
           %a.nav-link{:href => "#"} 商品一覧
         %li.nav-item
           %a.nav-link{:href => "#"} 特集
-    .navbar-brand.navbar-brand-center
+    .navbar-brand.navbar-brand-center.shadow.bg-light
       .container-fluid.p-2
         .nabvar-bland-custom
           =link_to root_path do
