@@ -1,7 +1,7 @@
 /* navbar
-%nav.navbar.navbar-light.navbar-customclass.navbar-toggle
+%nav.navbar.navbar-light.navbar-customclass
   .nav-group.fixed-top.align-items-baseline.d-flex.justify-content-between
-    %button.navbar-toggler{"aria-controls" => "navbarNav", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-bs-target" => "#navbarNav", "data-bs-toggle" => "collapse", :type => "button"}
+    %button.navbar-toggler.navbar-toggle{"aria-controls" => "navbarNav", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-bs-target" => "#navbarNav", "data-bs-toggle" => "collapse", :type => "button"}
       %span.navbar-toggler-icon
     #navbarNav.collapse.navbar-collapse
       %ul.navbar-nav
@@ -13,10 +13,10 @@
           %a.nav-link{:href => "#"} Pricing
         %li.nav-item
           %a.nav-link.disabled{"aria-disabled" => "true", :href => "#", :tabindex => "-1"} Disabled
-    =link_to root_path do
-      .navbar-brand.navbar-brand-center
-        .container-fluid.p-2
-          .nabvar-bland-custom
+    .navbar-brand.navbar-brand-center
+      .container-fluid.p-2
+        .nabvar-bland-custom
+          =link_to root_path do
             %img.d-inline-block.align-text-top{:alt => "", :height => "60", :src => "/assets/logo2.png", :width => "60"}/
     .like-cart.p-3
       .button.btn.btn-outline-dark.fw-bold
