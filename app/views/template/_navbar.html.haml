@@ -12,8 +12,8 @@
         %li.nav-item
           %a.nav-link{:href => "#"} 商品一覧
         %li.nav-item
-          %a.nav-link{:href => "#"} 特集
-    .navbar-brand.navbar-brand-center.shadow.bg-light
+          %a.nav-link{:href => "#"} コーヒーの淹れ方
+    .navbar-brand.navbar-brand-center.bg-light
       .container-fluid.p-2
         .nabvar-bland-custom
           =link_to root_path do
@@ -31,6 +31,7 @@
         =link_to new_user_session_path do
           .button.btn.btn-dark
             ログイン
+            -# マイレージポイントをつける
       - if user_signed_in?
         = link_to destroy_user_session_path, method: :delete do
           = icon("fas", "sign-out-alt", class: "icon")
