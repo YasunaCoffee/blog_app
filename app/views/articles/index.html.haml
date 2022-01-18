@@ -2,6 +2,7 @@
 = render "template/navtab"
 /* main
 %body.body-customclass
+  =render "template/carousel"
   .title-class
     おすすめの商品
   .p-3.d-flex.justify-content-center.align-items-end
@@ -23,12 +24,11 @@
     .btn.fw-bold.text-decoration-underline.d-flex.flex-row-reverse 
       ⇨全ての商品を見る
   .title-class
-    特集
-  .p-5
-    =render "template/carousel"
-  .title-class
     コーヒーの淹れ方
   .d-flex.justify-content-center
     .ratio.ratio-16x9
       %iframe{:allowfullscreen => "", :src => "https://www.youtube.com/embed/sv9322owOig", :title => "YouTube video"}
+  .p-3
+    .btn.fw-bold.text-decoration-underline.d-flex.flex-row-reverse 
+      ⇨すべての動画を見る
 = render "template/footer"
