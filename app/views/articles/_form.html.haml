@@ -8,10 +8,6 @@
     =f.text_field :title, id:"title", class: "form-control", placeholder: "タイトルはここ"
     #emailHelp.form-text タイトルを入力してください
   .mb-3
-    =f.label "Price",class: "form-label"
-    =f.number_field :price, id:"price", class: "form-control", placeholder: "1000"
-    #emailHelp.form-text 価格を入力してください
-  .mb-3
-    =f.label :description, "description"
+    =f.label :description, "内容"
     =f.text_area :description, id: "description", class: "form-control", rows:10, placeholder: "内容" 
   =f.submit "Submit", disable_with: 'Submiting...'
