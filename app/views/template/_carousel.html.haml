@@ -1,0 +1,27 @@
+#carouselExampleDark.carousel.carousel-dark.slide{"data-bs-ride" => "carousel"}
+  .carousel-indicators
+    %button.active{"aria-current" => "true", "aria-label" => "Slide 1", "data-bs-slide-to" => "0", "data-bs-target" => "#carouselExampleDark", :type => "button"}
+    %button{"aria-label" => "Slide 2", "data-bs-slide-to" => "1", "data-bs-target" => "#carouselExampleDark", :type => "button"}
+    %button{"aria-label" => "Slide 3", "data-bs-slide-to" => "2", "data-bs-target" => "#carouselExampleDark", :type => "button"}
+  .carousel-inner
+    .carousel-item.active{"data-bs-interval" => "10000"}
+      %img.d-block.w-100{:alt => "...", :src => "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80"}/
+      .carousel-caption.d-none.d-md-block
+        %h5 First slide label
+        %p Some representative placeholder content for the first slide.
+    .carousel-item{"data-bs-interval" => "2000"}
+      %img.d-block.w-100{:alt => "...", :src => "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80"}/
+      .carousel-caption.d-none.d-md-block
+        %h5 Second slide label
+        %p Some representative placeholder content for the second slide.
+    .carousel-item
+      %img.d-block.w-100{:alt => "...", :src => "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80"}/
+      .carousel-caption.d-none.d-md-block
+        %h5 Third slide label
+        %p Some representative placeholder content for the third slide.
+  %button.carousel-control-prev{"data-bs-slide" => "prev", "data-bs-target" => "#carouselExampleDark", :type => "button"}
+    %span.carousel-control-prev-icon{"aria-hidden" => "true"}
+    %span.visually-hidden Previous
+  %button.carousel-control-next{"data-bs-slide" => "next", "data-bs-target" => "#carouselExampleDark", :type => "button"}
+    %span.carousel-control-next-icon{"aria-hidden" => "true"}
+    %span.visually-hidden Next
